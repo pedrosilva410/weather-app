@@ -1,0 +1,6 @@
+:root {
+  --dark-gray: #1c1c1c; /* Background or primary dark color */
+  --blue-light: #4c7dff; /* Light blue for buttons or highlights */
+  --blue-dark: #2856b8; /* Darker blue for accents or hover effects */
+  --light-gray: #f2f2f2; /* Super light gray for text */
+}
