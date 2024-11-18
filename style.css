@@ -4,3 +4,29 @@
   --blue-dark: #2856b8; /* Darker blue for accents or hover effects */
   --light-gray: #f2f2f2; /* Super light gray for text */
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Includes padding and border in element's total width/height */
+}
+
+body {
+  font-family: "Poppins", sans-serif; /* Use Poppins font for the weather app */
+  line-height: 1.6; /* Improve readability */
+  background-color: var(
+    --dark-gray
+  ); /* Light neutral background resembling weather UI */
+  color: var(--light-gray); /* Dark gray text for good contrast */
+}
+
+a {
+  color: inherit; /* Inherit text color from parent */
+}
+
+ul,
+ol {
+  list-style: none; /* Remove bullets and numbers from lists */
+}
