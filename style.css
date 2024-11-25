@@ -1,4 +1,5 @@
 :root {
+  --darker-gray: #0f0f0f;
   --dark-gray: #1c1c1c; /* Background or primary dark color */
   --blue-light: #4c7dff; /* Light blue for buttons or highlights */
   --blue-dark: #2856b8; /* Darker blue for accents or hover effects */
@@ -13,6 +14,11 @@
   box-sizing: border-box; /* Includes padding and border in element's total width/height */
 }
 
+html,
+body {
+  height: 100vh;
+}
+
 body {
   font-family: "Poppins", sans-serif; /* Use Poppins font for the weather app */
   line-height: 1.6; /* Improve readability */
@@ -20,6 +26,10 @@ body {
     --dark-gray
   ); /* Light neutral background resembling weather UI */
   color: var(--light-gray); /* Dark gray text for good contrast */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 a {
@@ -40,10 +50,17 @@ header {
 main {
   text-align: center;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
 }
 
 form {
   margin: 20px 0;
+  width: 80vw;
+  margin-bottom: 30px;
 }
 
 input[type="text"] {
@@ -73,6 +90,11 @@ button:hover {
 
 div {
   margin-top: 20px;
+  background-color: var(--darker-gray);
+  width: 20vw;
+  margin-bottom: 100px;
+  padding: 20px;
+  border-radius: 20px;
 }
 
 div img {
